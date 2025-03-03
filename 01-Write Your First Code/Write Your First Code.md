@@ -14,11 +14,12 @@ The .NET Editor and output console provide a great in-browser experience that's 
 
 1. Enter this code exactly as it appears into the .NET Editor on the right:
 
-```
-Console.WriteLine("Hello World!");
-```
+     ```
+     Console.WriteLine("Hello World!");
+     ```
 
-![alt text](image.png)
+     ![alt text](image.png)
+
 
 You'll see an explanation of how and why it works soon. But first, you should experience it running, and ensure you entered it correctly. To do that, you'll run your code.
 
@@ -102,12 +103,12 @@ In this task, you'll comment out the previous line of code, then add new lines o
 
 1. Modify the code you wrote so that it's prefixed by a code comment using two forward slashes `//`:
 
-```
-// Console.WriteLine("Hello World!");
-```
+     ```
+     // Console.WriteLine("Hello World!");
+     ```
 
 
-![alt text](image-5.png)
+     ![alt text](image-5.png)
 
 You can create a code comment by prefixing a line of code with two forward slashes `//`. This prefix instructs the compiler to ignore all the instructions on that line.
 
