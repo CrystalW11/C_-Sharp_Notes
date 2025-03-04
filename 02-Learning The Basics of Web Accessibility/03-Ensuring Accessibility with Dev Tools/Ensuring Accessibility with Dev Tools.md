@@ -39,3 +39,21 @@ Test out Lighthouse in your browser. The following screenshots use Edge, but you
 2. Select the `F12` key to open the developer tools.
 
 3. On the top, select the chevron (`>>`) icon to open the list of hidden tabs.
+
+     ![alt text](image.png)
+
+4. Select **Lighthouse** from the list.
+
+5. Under **Categories**, clear all items except Accessibility.
+
+6. Under **Device**, select **Desktop**.
+
+
+     ![alt text](image-1.png)
+
+7. Select **Generate report**.
+
+8. Notice the score and associated information about the page.
+
+9. You can test other pages by selecting **Clear all** in Lighthouse, going to a different page, and then selecting **Generate report**.
+
