@@ -58,3 +58,6 @@ It's important to understand the flow of execution. In other words, your code in
 
 Now, let's test what you've learned. Each module features a simple challenge, and if you get stuck, you'll be supplied with a solution. In the next unit, you'll get a chance to write some **C#** on your own.
 
+<hr/>
+
+![alt text](image-1.png)
