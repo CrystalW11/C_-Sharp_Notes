@@ -19,7 +19,7 @@ In this exercise, you'll declare a variable, assign it a value, retrieve its val
      firstName = "Bob";
      ```
 
-To declare a variable, you enter the data type you want to use followed by a name for the variable. To assign a value to a variable, you use the *assignment operator*, which is a single equals character `=`.
+To declare a variable, you enter the data type you want to use followed by a name for the variable. To assign a value to a variable, you use the ***assignment operator***, which is a single equals character `=`.
 
 ### ❗ Note
 
@@ -154,7 +154,7 @@ In fact, you can perform both the declaration and setting the value of the varia
 
 Here's what you've learned about working with variables so far:
 
-- You must assign (set) a value to a variable before you can retrieve (get) a value from a variable.
+- You must assign (`set`) a value to a variable before you can retrieve (`get`) a value from a variable.
 - You can initialize a variable by assigning a value to the variable at the point of declaration.
 - Assignment happens from right to left.
 - You use a single equals character as the assignment operator.
