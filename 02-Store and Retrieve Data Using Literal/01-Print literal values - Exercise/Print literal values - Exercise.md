@@ -101,7 +101,7 @@ Here, precision reflects the number of digits past the decimal that are accurate
      Console.WriteLine(0.25F);
      ```
 
-To create a `float` literal, append the letter `F` after the number. In this context, the `F` is called a ***literal suffix***. The literal suffix tells the compiler you wish to work with a value of `float` type. You can use either a lower-case `f` or upper-case `F` as the literal suffix for a `float`.
+     To create a `float` literal, append the letter `F` after the number. In this context, the `F` is called a ***literal suffix***. The literal suffix tells the compiler you wish to work with a value of `float` type. You can use either a lower-case `f` or upper-case `F` as the literal suffix for a `float`.
 
 2. Press the green Run button to run your code. You should see the following result in the output console:
 
@@ -110,7 +110,7 @@ To create a `float` literal, append the letter `F` after the number. In this con
      ```
 
 
-Notice that the `float` data type is the least precise, so it's best to use this data type for fixed fractional values to avoid unexpected computation errors.
+     Notice that the `float` data type is the least precise, so it's best to use this data type for fixed fractional values to avoid unexpected computation errors.
 
 3. Add the following line of code in the code editor:
 
@@ -118,27 +118,27 @@ Notice that the `float` data type is the least precise, so it's best to use this
      Console.WriteLine(2.625);
      ```
 
-To create a `double` literal, just enter a decimal number. The compiler defaults to a `double` literal when a decimal number is entered without a literal suffix.
+     To create a `double` literal, just enter a decimal number. The compiler defaults to a `double` literal when a decimal number is entered without a literal suffix.
 
 4. Press the green Run button to run your code. You should see the following result in the output window:
 
-```
-2.625
-```
+     ```
+     2.625
+     ```
 
 5. Add the following line of code in the code editor:
 
-```
-Console.WriteLine(12.39816m);
-```
+     ```
+     Console.WriteLine(12.39816m);
+     ```
 
-To create a decimal literal, append the letter `m` after the number. In this context, the `m` is called a ***literal suffix***. The literal suffix tells the compiler you wish to work with a value of `decimal` type. You can use either a lower-case `m` or upper-case `M` as the literal suffix for a `decimal`.
+     To create a decimal literal, append the letter `m` after the number. In this context, the `m` is called a ***literal suffix***. The literal suffix tells the compiler you wish to work with a value of `decimal` type. You can use either a lower-case `m` or upper-case `M` as the literal suffix for a `decimal`.
 
 6. Press the green Run button to run your code. You should see the following result in the output console:
 
-```
-12.39816
-```
+     ```
+     12.39816
+     ```
 
 ### Use Boolean literals
 
@@ -148,17 +148,17 @@ The term `bool` is short for ***Boolean***. In **C#**, they're officially referr
 
 1. Add the following lines of code in the code editor:
 
-```
-Console.WriteLine(true);
-Console.WriteLine(false);
-```
+     ```
+     Console.WriteLine(true);
+     Console.WriteLine(false);
+     ```
 
 2. Press the green Run button to run your code. You should see the following result in the output console:
 
-```
-True
-False
-```
+     ```
+     True
+     False
+     ```
 
 The `bool` literals represent the idea of truth and falsehood. You'll use `bool` values extensively when you start to add decision logic to your applications. You'll evaluate expressions to see whether the expression is true or false.
 
