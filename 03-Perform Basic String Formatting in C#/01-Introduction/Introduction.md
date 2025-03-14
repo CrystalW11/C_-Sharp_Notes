@@ -23,5 +23,7 @@ In this module, you will:
 ### Prerequisites
 
 - Beginner level experience with a `.NET` editor
-- Beginner level experience with displaying a message to a console using the `Console.WriteLine()` and `Console.Write(String)` methods.
+
+- Beginner level experience with displaying a message to a console using the [**`Console.WriteLine()`**](https://learn.microsoft.com/en-us/dotnet/api/system.console.writeline?view=net-9.0#system-console-writeline) and  [**`Console.Write(String)`**](https://learn.microsoft.com/en-us/dotnet/api/system.console.write?view=net-9.0#system-console-write(system-string)) methods.
+
 - Beginner level experience with `data types`, `declaring`, `initializing`, `setting`, and `retrieving values` from `variables`.
