@@ -10,9 +10,9 @@
 
 2. Store the following values in variables:
 
-- Bob
-- 3
-- 34.4
+- `Bob`
+- `3`
+- `34.4`
 
 These variables should be given names that reflect their purpose.
 
@@ -30,3 +30,8 @@ Finally, you'll combine the variables with literal strings passed into a series 
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue to view a solution to this challenge.
 
+```
+var message = "Hello, Bob! You have 3 messages in your inbox. The temperature is 34.4 celsius.";
+
+Console.WriteLine(message);
+```
