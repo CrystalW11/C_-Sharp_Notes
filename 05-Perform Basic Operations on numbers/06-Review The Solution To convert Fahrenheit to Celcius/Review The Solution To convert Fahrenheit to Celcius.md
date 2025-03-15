@@ -14,7 +14,7 @@ This code is *"one possible solution"* among many possible solutions.
 
 If you were successful, congratulations! Continue to the knowledge check in the next unit.
 
-### ❗ Important
+### ❗Important
 
 If you had trouble completing this challenge, maybe you should review the previous units before you continue on.
 
