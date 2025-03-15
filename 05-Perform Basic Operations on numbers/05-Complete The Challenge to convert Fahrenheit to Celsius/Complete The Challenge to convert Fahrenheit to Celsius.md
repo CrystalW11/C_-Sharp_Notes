@@ -31,3 +31,24 @@ In this challenge, you'll write code that will use a formula to convert a temper
 Admittedly, it is preferred to not see so many values after the decimal point. Ideally the value would be formatted to a single value after the decimal point: `34.4`.
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue to view a solution to this challenge.
+
+
+<hr/>
+
+
+### Answer
+
+```
+int fahrenheit = 94;
+        double celsius = (fahrenheit - 32) * 5.0 / 9.0;
+        
+        Console.WriteLine("The temperature in Fahrenheit is: " + fahrenheit + "°F");
+        Console.WriteLine("The converted temperature in Celsius is: " + celsius.ToString("F2") + "°C");
+```
+
+### Output 
+
+```
+The temperature in Fahrenheit is: 94°F
+The converted temperature in Celsius is: 34.44°C
+```
