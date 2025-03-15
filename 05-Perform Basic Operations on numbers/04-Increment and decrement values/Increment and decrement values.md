@@ -27,7 +27,7 @@ value++;           // value is now 2.
 
 These same techniques can be used for subtraction, multiplication, and more. The following exercise steps will highlight a few.
 
-### ❗Note
+❗**Note**
 
 Operators like `+=`, `-=`, `*=`, `++`, and `--` are known as compound assignment operators because they compound some operation in addition to assigning the result to the variable. The `+=` operator is specifically termed the addition assignment operator.
 

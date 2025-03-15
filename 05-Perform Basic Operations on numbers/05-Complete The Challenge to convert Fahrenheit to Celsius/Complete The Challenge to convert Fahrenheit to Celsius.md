@@ -26,7 +26,7 @@ In this challenge, you'll write code that will use a formula to convert a temper
      The temperature is 34.444444444444444444444444447 Celsius.
      ```
 
-### ❗Note
+❗**Note**
 
 Admittedly, it is preferred to not see so many values after the decimal point. Ideally the value would be formatted to a single value after the decimal point: `34.4`.
 
