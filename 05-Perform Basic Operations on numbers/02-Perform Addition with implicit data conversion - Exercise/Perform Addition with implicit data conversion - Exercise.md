@@ -81,7 +81,7 @@ Bob sold 14 widgets.
 
 The parentheses symbol `()` becomes another overloaded operator. In this case, the opening and closing parentheses form the ***order of operations*** operator, just like you might use in a mathematical formula. You indicate that you want the inner-most parentheses resolved first resulting in the addition of `int` values `widgetsSold` and the value `7`. Once that is resolved, then it will implicitly convert the result to a string so that it can be concatenated with the rest of the message.
 
-### ❗ Note
+❗ **Note**
 
 You should probably avoid performing both a calculation and concatenation in a single line of code. The point here is to help you understand how to view operators and operands the way the compiler does.
 
