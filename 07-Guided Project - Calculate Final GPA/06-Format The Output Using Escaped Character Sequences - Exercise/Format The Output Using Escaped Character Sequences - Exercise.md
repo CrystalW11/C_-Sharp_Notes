@@ -128,4 +128,4 @@ In this task, you'll run the code and verify that the output is correct.
      Final GPA:          3.35
      ```
 
-If your code displays different results, you'll need to review your code to find your error and make updates. Run the code again to see if you've fixed the problem. Continue updating and running your code until your code produces the expected results.
+     If your code displays different results, you'll need to review your code to find your error and make updates. Run the code again to see if you've fixed the problem. Continue updating and running your code until your code produces the expected results.
