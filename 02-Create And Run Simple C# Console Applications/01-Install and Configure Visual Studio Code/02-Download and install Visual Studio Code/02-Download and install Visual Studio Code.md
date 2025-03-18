@@ -12,5 +12,6 @@ Getting up and running with Visual Studio Code is quick and easy. It's a small d
 
      You can use any browser, such as the Microsoft Edge browser or the Chrome browser.
 
+
 2. In the browser window, select **Download for Windows**.
 
