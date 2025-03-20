@@ -224,3 +224,4 @@ Try accessing the `Random.Next()` method directly and see what happens.
 
 ### Check your knowledge
 
+![alt text](image.png)
