@@ -49,3 +49,5 @@ All software developers follow a similar process when stepping into unfamiliar t
 
 ### Check your knowledge
 
+![alt text](image.png)
+
