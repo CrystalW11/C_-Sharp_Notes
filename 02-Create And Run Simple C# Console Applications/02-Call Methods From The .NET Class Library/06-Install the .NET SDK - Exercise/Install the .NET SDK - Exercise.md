@@ -80,3 +80,5 @@ Use the following steps to complete this section of the exercise:
 
 Congratulations on getting .NET installed. You're now ready to start writing, running, and debugging C# applications using Visual Studio Code.
 
+![alt text](image-1.png)
+
