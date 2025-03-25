@@ -77,5 +77,3 @@ There aren't any prizes for installing the most extensions. There are many great
 The C# extensions you installed are the only ones that you need for now.
 
 In the next Unit, you install the .NET SDK.
-
-
