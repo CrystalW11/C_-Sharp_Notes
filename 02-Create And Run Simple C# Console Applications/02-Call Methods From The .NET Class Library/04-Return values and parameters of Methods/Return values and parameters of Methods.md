@@ -39,8 +39,7 @@ However, ignoring the return value would be pointless. The reason you're calling
 
 ### Method parameters and arguments in the calling statement
 
-When you call a method, you can pass in values that the method will use to complete its task. These values are called **arguments**. The method uses the arguments to assign values to the **parameters** that are defined in the method's signature. A method can require one or more parameters to accomplish its task, or none at all.
-
+When you call a method, you can pass in values that the method will use to complete its task. These values are called **arguments**. The method uses the arguments to assign values to the **paramet ers** that are defined in the method's signature. A method can require one or more parameters to accomplish its task, or none at all.
 
 ❗**Note**
 
@@ -259,4 +258,8 @@ The second way to learn about overloaded versions of the methods is to consult t
       [**`Random.Next Method`**](https://learn.microsoft.com/en-us/dotnet/api/system.random.next?view=net-9.0)
 
 4. Open the link for **C# Random.Next()**.
+
+#### Answer
+
+![alt text](image.png)
 
