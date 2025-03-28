@@ -258,4 +258,111 @@ Next, you can implement the rule: "If all three dice you roll result in the same
 
      Here you combine two Boolean expressions to create one composite Boolean expression in a single line of code. You have one outer set of parentheses that combines two inner sets of parentheses separated by two ampersand characters.
 
-The double ampersand characters `&&` are the **logical AND** operator, which basically says "only if both expressions are true, then the entire expression is true". In this case, if roll1 is equal to roll2, and roll2 is equal to roll3, then by deduction, roll1 must be equal to roll3, and the user rolled triples.
+The double ampersand characters `&&` are the **logical AND** operator, which basically says "only if both expressions are true, then the entire expression is true". In this case, if `roll1` is equal to `roll2`, and `roll2` is equal to `roll3`, then by deduction, `roll1` must be equal to `roll3`, and the user rolled triples.
+
+
+3. On the Visual Studio Code **File** menu, click **Save**.
+
+4. Take a minute to review your code.
+
+     Ensure that your code matches the following:
+
+     ```
+     Random dice = new Random();
+
+     int roll1 = dice.Next(1, 7);
+     int roll2 = dice.Next(1, 7);
+     int roll3 = dice.Next(1, 7);
+
+     int total = roll1 + roll2 + roll3;
+
+     Console.WriteLine($"Dice roll: {roll1} + {roll2} + {roll3} = {total}");
+
+     if ((roll1 == roll2) || (roll2 == roll3) || (roll1 == roll3))
+     {
+     Console.WriteLine("You rolled doubles! +2 bonus to total!");
+     total += 2;
+     }
+
+     if ((roll1 == roll2) && (roll2 == roll3)) 
+     {
+     Console.WriteLine("You rolled triples! +6 bonus to total!");
+     total += 6;
+     }
+
+     if (total >= 15)
+     {
+     Console.WriteLine("You win!");
+     }
+
+     if (total < 15)
+     {
+     Console.WriteLine("Sorry, you lose.");
+     }
+     ```
+
+5. In the EXPLORER panel, to open a Terminal at your **TestProject** folder location, right-click TestProject, and then select **Open in Integrated Terminal**.
+
+     A Terminal panel should open, and should include a command prompt showing that the Terminal is open to your TestProject folder location.
+
+6. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
+
+❗**Note**
+
+If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: **`C:\Users\someuser\Desktop\csharpprojects\TestProject>`**
+
+You should see output that resembles one of the following results:
+
+```
+Dice roll: 3 + 6 + 1 = 10
+Sorry, you lose.
+```
+
+Or, like this:
+
+```
+Dice roll: 1 + 4 + 4 = 9
+You rolled doubles! +2 bonus to total!
+Sorry, you lose.
+```
+
+Or, like this:
+
+```
+Dice roll: 5 + 6 + 4 = 15
+You win!
+```
+
+Or, if you're lucky, you'll see this:
+
+```
+Dice roll: 6 + 6 + 6 = 18
+You rolled doubles! +2 bonus to total!
+You rolled triples! +6 bonus to total!
+You win!
+```
+
+But wait, should you really reward the player with both the triple bonus and the double bonus? After all, a roll of triples implies that they also rolled doubles. Ideally, the bonuses shouldn't ***stack***. There should be two separate bonus conditions. This is a bug in logic that will need to be corrected.
+
+### Problems in your logic and opportunities to improve the code
+
+Although this is a good start, and you've learned a lot about the `if` statement, Boolean expressions, code blocks, logical OR and AND operators, and so on, there's much that can be improved. You'll do that in the next unit.
+
+### Recap
+
+- Use an `if` statement to branch your code logic. The `if` decision statement will execute code in its code block if its Boolean expression equates to true. Otherwise, the runtime will skip over the code block and continue to the next line of code after the code block.
+
+- A Boolean expression is any expression that returns a Boolean value.
+
+- Boolean operators will compare the two values on its left and right for equality, comparison, and more.
+
+- A code block is defined by curly braces `{ }`. It collects lines of code that should be treated as a single unit.
+
+- The logical AND operator `&&` aggregates two expressions so that both subexpressions must be true in order for the entire expression to be true.
+
+- The logical OR operator `||` aggregates two expressions so that if either subexpression is true, the entire expression is true.
+
+### Check your knowledge
+
+![alt text](image.png)
+
