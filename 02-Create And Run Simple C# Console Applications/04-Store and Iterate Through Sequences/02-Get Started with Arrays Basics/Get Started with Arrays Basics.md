@@ -386,3 +386,4 @@ Here's the most important things to remember when working with arrays:
 ### Check your knowledge
 
 ![alt text](image.png)
+
