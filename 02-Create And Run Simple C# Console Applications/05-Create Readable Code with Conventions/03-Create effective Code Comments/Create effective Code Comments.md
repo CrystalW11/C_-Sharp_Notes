@@ -71,3 +71,174 @@ If you are working on your own PC rather than in a sandbox or hosted environment
      You'll be using this C# console project to create, build, and run code samples during this module.
 
 10. Close the Terminal panel.
+
+
+### Create and use code comments
+
+In this task, you will try creating and removing various types of code comments.
+
+1. In the Visual Studio Code Editor panel, enter the following code:
+
+     ```
+     string firstName = "Bob";
+     int widgetsSold = 7;
+     Console.WriteLine($"{firstName} sold {widgetsSold} widgets.");
+     ```
+
+2. To modify your code with code comments and revisions, update your code as follows:
+
+     ```
+     string firstName = "Bob";
+     int widgetsPurchased = 7;
+     // Testing a change to the message.
+     // int widgetsSold = 7;
+     // Console.WriteLine($"{firstName} sold {widgetsSold} widgets.");
+     Console.WriteLine($"{firstName} purchased {widgetsPurchased} widgets.");
+     ```
+
+3. Take a minute to review your comments and code updates.
+
+     Notice that the code comments are used to document the potential change being made, and to temporarily disable the old message as you test the new message. Your next step will be to test your update. If you're satisfied with the new code, you can safely delete the old code that was commented out. This is a safer, more methodical approach to modifying working code until you're convinced that you're ready to permanently remove it.
+
+4. On the Visual Studio Code **File** menu, click **Save**.
+
+5. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
+
+6. At the Terminal command prompt, type **dotnet run** and then press Enter.
+
+     You should see the following output:
+
+     ```
+     Bob purchased 7 widgets.
+     ```
+
+     Again, if you're satisfied with your updates, delete the old code that's commented out.
+
+7. Delete the code comments.
+
+     Your code should match the following:
+
+     ```
+     string firstName = "Bob";
+     int widgetsPurchased = 7;
+     Console.WriteLine($"{firstName} purchased {widgetsPurchased} widgets.");
+     ```
+
+8. To apply a block comment that comments out multiple lines, update your code as follows:
+
+     ```
+     /*
+     string firstName = "Bob";
+     int widgetsPurchased = 7;
+     Console.WriteLine($"{firstName} purchased {widgetsPurchased} widgets.");
+     */
+     ```
+
+     Block comments are great if you need to write a long comment or remove many lines of code. Block comments use a `/*` at the beginning of the code and a `*/` at the end. Using a block comment is the quickest and easiest way to disable three or more lines of code.
+
+9. Replace your existing code with the following:
+
+     ```
+     Random random = new Random();
+     string[] orderIDs = new string[5];
+     // Loop through each blank orderID
+     for (int i = 0; i < orderIDs.Length; i++)
+     {
+     // Get a random value that equates to ASCII letters A through E
+     int prefixValue = random.Next(65, 70);
+     // Convert the random value into a char, then a string
+     string prefix = Convert.ToChar(prefixValue).ToString();
+     // Create a random number, pad with zeroes
+     string suffix = random.Next(1, 1000).ToString("000");
+     // Combine the prefix and suffix together, then assign to current OrderID
+     orderIDs[i] = prefix + suffix;
+     }
+     // Print out each orderID
+     foreach (var orderID in orderIDs)
+     {
+     Console.WriteLine(orderID);
+     }
+     ```
+
+❗**Note**
+
+There are many C# concepts in this code listing that may be new to you. It's not necessary to understand what the code is doing in order to appreciate how comments can help readers understand the purpose of the code.
+
+10. Take a minute to see if you can figure out the purpose of the code.
+
+     Given the comments, you might be able to figure out what the code is doing (assuming the comments accurately describe the current state and were updated as the code was updated). But can you guess why this code exists? Wouldn't it be helpful if there was some explanation at the top of the code file that provided some context and described its purpose?
+
+11. Consider how you would improve the comments.
+
+     Notice that there are two main problems with these comments:
+
+     - The code comments unnecessarily explain the obvious functionality of individual lines of code. These are considered low-quality comments because they merely explain how C# or methods of the .NET Class Library work. If the reader is unfamiliar with these ideas, they can look them up using learn.microsoft.com or IntelliSense.
+     
+     - The code comments don't provide any context to the problem being solved by the code. These are considered low-quality comments because the reader doesn't gain any insight into the purpose of this code, especially as it relates to the larger system.
+
+12. Remove the existing comments.
+
+     Your code should match the following:
+
+     ```
+     Random random = new Random();
+     string[] orderIDs = new string[5];
+
+     for (int i = 0; i < orderIDs.Length; i++)
+     {
+     int prefixValue = random.Next(65, 70);
+     string prefix = Convert.ToChar(prefixValue).ToString();
+     string suffix = random.Next(1, 1000).ToString("000");
+
+     orderIDs[i] = prefix + suffix;
+     }
+
+     foreach (var orderID in orderIDs)
+     {
+     Console.WriteLine(orderID);
+     }
+     ```
+
+     Notice that the code is already less cluttered.
+
+13. To add a comment that explains the higher-level purpose of your code, update your code as follows:
+
+     ```
+     /*
+     The following code creates five random OrderIDs
+     to test the fraud detection process.  OrderIDs 
+     consist of a letter from A to E, and a three
+     digit number. Ex. A123.
+     */
+     Random random = new Random();
+     string[] orderIDs = new string[5];
+
+     for (int i = 0; i < orderIDs.Length; i++)
+     {
+     int prefixValue = random.Next(65, 70);
+     string prefix = Convert.ToChar(prefixValue).ToString();
+     string suffix = random.Next(1, 1000).ToString("000");
+
+     orderIDs[i] = prefix + suffix;
+     }
+
+     foreach (var orderID in orderIDs)
+     {
+     Console.WriteLine(orderID);
+     }
+     ```
+
+     A comment's usefulness is subjective. In all matters related to code readability, you should use your best judgment. Do what you think is best to improve the clarity of your code.
+
+### Recap
+
+The main takeaways from this exercise:
+
+
+- Use code comments to leave meaningful notes to yourself about the problem your code solves.
+
+- Don't use code comments that explain how C# or the .NET Class Library works.
+
+- Use code comments when temporarily trying alternative solutions until you're ready to commit to the new code solution, at which point you can delete the old code.
+
+- Never trust comments. They may not reflect the current state of the code after many changes and updates.
