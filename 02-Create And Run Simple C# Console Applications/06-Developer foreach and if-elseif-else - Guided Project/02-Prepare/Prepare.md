@@ -128,3 +128,4 @@ Use the following steps to prepare for the Guided project exercises.
      The Visual Studio Code EXPLORER view should show the GuidedProject folder and two subfolders named Final and Starter.
 
 You're now ready to begin the Guided project exercises. Good luck!
+
