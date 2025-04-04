@@ -8,3 +8,7 @@ By creating a nested combination of foreach and if statements, you built an appl
 
 Having the ability to implement nested iteration statements that process array data, and selection statements that branch the code execution path, enables you to create more efficient and extensible code.
 
+### Answer for FreeCodeCamp
+
+![alt text](image.png)
+
