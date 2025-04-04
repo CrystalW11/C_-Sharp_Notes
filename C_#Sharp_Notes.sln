@@ -1,0 +1,74 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Create And Run Simple C# Console Applications", "02-Create And Run Simple C# Console Applications", "{BE956B5E-55A4-AE64-B3ED-7A376AEE3617}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06-Developer foreach and if-elseif-else - Guided Project", "06-Developer foreach and if-elseif-else - Guided Project", "{A6D413AE-DF90-C8B7-9AF9-B79C014B7AAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Prepare", "02-Prepare", "{69163FA1-9106-E4E3-9628-FFB3B860D915}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Guided-project-foreach-if-array-CSharp-main", "Guided-project-foreach-if-array-CSharp-main", "{83AF3B3D-E589-3AB9-9F37-A7A00DCE5E7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GuidedProject", "GuidedProject", "{3BDEB155-DE6A-F308-83C5-294DC08AD1D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Final", "02-Create And Run Simple C# Console Applications\06-Developer foreach and if-elseif-else - Guided Project\02-Prepare\Guided-project-foreach-if-array-CSharp-main\GuidedProject\Final\Final.csproj", "{EFEDCBE6-79CE-8903-4CC0-5520BF1BBA79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starter", "02-Create And Run Simple C# Console Applications\06-Developer foreach and if-elseif-else - Guided Project\02-Prepare\Guided-project-foreach-if-array-CSharp-main\GuidedProject\Starter\Starter.csproj", "{90D3E4B8-D64B-97FF-9AC5-A5FDA91A3D61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07-Develop foreach and if-elseif-else Structures", "07-Develop foreach and if-elseif-else Structures", "{5E4F0A03-45C2-B447-00D3-FF2FF36A1DD2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Prepare", "02-Prepare", "{DC77752B-8974-19D5-40EF-7F8CFCCCD12A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Challenge-project-foreach-if-array-CSharp-main", "Challenge-project-foreach-if-array-CSharp-main", "{40F4A6E4-95F4-934C-882A-49E34C48E9CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChallengeProject", "ChallengeProject", "{7D882F25-5E3A-BF56-E582-A937CBC9A226}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Final", "02-Create And Run Simple C# Console Applications\07-Develop foreach and if-elseif-else Structures\02-Prepare\Challenge-project-foreach-if-array-CSharp-main\ChallengeProject\Final\Final.csproj", "{AEDEB2E1-6F03-08EB-B3B0-5EBA961B407E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starter", "02-Create And Run Simple C# Console Applications\07-Develop foreach and if-elseif-else Structures\02-Prepare\Challenge-project-foreach-if-array-CSharp-main\ChallengeProject\Starter\Starter.csproj", "{8B7082AE-3927-DDDE-088A-4DFE8BA003B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFEDCBE6-79CE-8903-4CC0-5520BF1BBA79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFEDCBE6-79CE-8903-4CC0-5520BF1BBA79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFEDCBE6-79CE-8903-4CC0-5520BF1BBA79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFEDCBE6-79CE-8903-4CC0-5520BF1BBA79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90D3E4B8-D64B-97FF-9AC5-A5FDA91A3D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90D3E4B8-D64B-97FF-9AC5-A5FDA91A3D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90D3E4B8-D64B-97FF-9AC5-A5FDA91A3D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90D3E4B8-D64B-97FF-9AC5-A5FDA91A3D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEDEB2E1-6F03-08EB-B3B0-5EBA961B407E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEDEB2E1-6F03-08EB-B3B0-5EBA961B407E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEDEB2E1-6F03-08EB-B3B0-5EBA961B407E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEDEB2E1-6F03-08EB-B3B0-5EBA961B407E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B7082AE-3927-DDDE-088A-4DFE8BA003B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B7082AE-3927-DDDE-088A-4DFE8BA003B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B7082AE-3927-DDDE-088A-4DFE8BA003B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B7082AE-3927-DDDE-088A-4DFE8BA003B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A6D413AE-DF90-C8B7-9AF9-B79C014B7AAF} = {BE956B5E-55A4-AE64-B3ED-7A376AEE3617}
+		{69163FA1-9106-E4E3-9628-FFB3B860D915} = {A6D413AE-DF90-C8B7-9AF9-B79C014B7AAF}
+		{83AF3B3D-E589-3AB9-9F37-A7A00DCE5E7B} = {69163FA1-9106-E4E3-9628-FFB3B860D915}
+		{3BDEB155-DE6A-F308-83C5-294DC08AD1D5} = {83AF3B3D-E589-3AB9-9F37-A7A00DCE5E7B}
+		{EFEDCBE6-79CE-8903-4CC0-5520BF1BBA79} = {3BDEB155-DE6A-F308-83C5-294DC08AD1D5}
+		{90D3E4B8-D64B-97FF-9AC5-A5FDA91A3D61} = {3BDEB155-DE6A-F308-83C5-294DC08AD1D5}
+		{5E4F0A03-45C2-B447-00D3-FF2FF36A1DD2} = {BE956B5E-55A4-AE64-B3ED-7A376AEE3617}
+		{DC77752B-8974-19D5-40EF-7F8CFCCCD12A} = {5E4F0A03-45C2-B447-00D3-FF2FF36A1DD2}
+		{40F4A6E4-95F4-934C-882A-49E34C48E9CC} = {DC77752B-8974-19D5-40EF-7F8CFCCCD12A}
+		{7D882F25-5E3A-BF56-E582-A937CBC9A226} = {40F4A6E4-95F4-934C-882A-49E34C48E9CC}
+		{AEDEB2E1-6F03-08EB-B3B0-5EBA961B407E} = {7D882F25-5E3A-BF56-E582-A937CBC9A226}
+		{8B7082AE-3927-DDDE-088A-4DFE8BA003B0} = {7D882F25-5E3A-BF56-E582-A937CBC9A226}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {786093DA-0305-456A-B2C7-F391B66291A9}
+	EndGlobalSection
+EndGlobal
