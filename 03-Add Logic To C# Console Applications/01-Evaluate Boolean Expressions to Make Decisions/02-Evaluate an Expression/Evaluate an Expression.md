@@ -321,3 +321,8 @@ Here's the main takeaways you learned about evaluating Boolean expressions so fa
 
 - Use the logical negation operator `!` to evaluate the opposite of a given expression.
 
+
+### Check Your Knowledge
+
+![alt text](image.png)
+
