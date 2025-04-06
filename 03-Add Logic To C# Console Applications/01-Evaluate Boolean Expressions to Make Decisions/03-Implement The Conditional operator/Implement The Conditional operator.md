@@ -91,3 +91,7 @@ You should remember the following facts about the conditional operator:
 
 - You can use the conditional operator when you need to return a value that's based on a binary condition. Your code will return the first option when the condition evaluates to true, and it will return the second option when the condition evaluates to false.
 
+### Check Your Knowledge
+
+![alt text](image.png)
+
