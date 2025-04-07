@@ -8,3 +8,8 @@ You explored the impact of declaring variables inside and outside the boundaries
 
 Code that uses improperly scoped or initialized variables will produce runtime errors. Your ability to scope and initialize variables correctly will ensure a better user experience with your applications.
 
+
+#### FreeCodeCamp Question
+
+![alt text](image.png)
+
