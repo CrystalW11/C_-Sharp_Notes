@@ -281,3 +281,5 @@ Here are a few important things to remember about code blocks:
 
 ### Check your knowledge
 
+![alt text](image.png)
+
