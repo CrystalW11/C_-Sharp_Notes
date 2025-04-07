@@ -8,3 +8,6 @@ Using various operators and techniques, you wrote code that evaluated equality, 
 
 Without this full complement of operators and techniques, you would be limited in the kinds of decision statements you could build. Since all business logic requires some Boolean expressions, you've added a valuable tool to your programming toolbox.
 
+#### FreeCodeCamp Question
+
+![alt text](image.png)
