@@ -285,3 +285,6 @@ Here's the main takeaways you learned about the switch statement:
 
 - Use the optional `default` keyword to create a label and a switch section that will be used when no other case labels match.
 
+### Check Your knowledge
+
+![alt text](image.png)
