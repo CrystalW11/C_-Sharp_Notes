@@ -17,3 +17,7 @@ Okay, now let's prepare our coding environment and begin our examination of code
 ### Prepare your coding environment
 
 This module includes hands-on activities that guide you through the process of building and running demonstration code. We encourage you to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities will help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
+
+1. Open Visual Studio Code.
+
+     You can use the Windows Start menu (or equivalent resource for another OS) to open Visual Studio Code.
