@@ -21,3 +21,5 @@ This module includes hands-on activities that guide you through the process of b
 1. Open Visual Studio Code.
 
      You can use the Windows Start menu (or equivalent resource for another OS) to open Visual Studio Code.
+
+2. On the Visual Studio Code **File** menu, select **Open Folder**.
