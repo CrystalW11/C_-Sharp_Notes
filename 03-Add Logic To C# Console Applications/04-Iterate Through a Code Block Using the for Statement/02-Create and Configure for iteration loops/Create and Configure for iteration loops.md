@@ -23,3 +23,19 @@ This module includes hands-on activities that guide you through the process of b
      You can use the Windows Start menu (or equivalent resource for another OS) to open Visual Studio Code.
 
 2. On the Visual Studio Code **File** menu, select **Open Folder**.
+
+3. In the **Open Folder** dialog, navigate to the Windows Desktop folder.
+
+     If you have different folder location where you keep code projects, you can use that folder location instead. For this training, the important thing is to have a location that’s easy locate and remember.
+
+4. In the **Open Folder** dialog, select **Select Folder**.
+
+     If you see a security dialog asking if you trust the authors, select **Yes**.
+
+5. On the Visual Studio Code **Terminal** menu, select **New Terminal**.
+
+     Notice that a command prompt in the Terminal panel displays the folder path for the current folder. For example:
+
+     ```
+     C:\Users\someuser\Desktop>
+     ```
