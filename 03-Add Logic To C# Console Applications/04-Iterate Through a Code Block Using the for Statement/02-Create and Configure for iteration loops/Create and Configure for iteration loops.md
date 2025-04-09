@@ -338,3 +338,87 @@ Let's try using a `for` statement to modify the contents of an array inside the 
      foreach (var name in names) Console.WriteLine(name);
      ```
 
+2. Take a minute to review your updated code.
+
+     Notice that we removed the curly braces from the code blocks that contained only a single line of code. This revision uses the same technique that we talked about in the module "Control variable scope and logic using code blocks in C#". Many developers find this style difficult to read, while others prefer this abbreviated style because it helps them write more succinctly and more expressively. If you find this code difficult to read, or if you just don't prefer this style, rest assured that the curly braces can always be used in your code blocks. If you want, update the code in the Editor panel with the following code:
+
+     ```
+     string[] names = { "Alex", "Eddie", "David", "Michael" };
+
+     for (int i = 0; i < names.Length; i++)
+     {
+     if (names[i] == "David")
+     {
+          names[i] = "Sammy";
+     }
+     }
+
+     foreach (var name in names)
+     {
+     Console.WriteLine(name);
+     }
+     ```
+
+     ```
+     string[] names = { "Alex", "Eddie", "David", "Michael" };
+
+     for (int i = 0; i < names.Length; i++)
+     {
+     if (names[i] == "David")
+     {
+          names[i] = "Sammy";
+     }
+     }
+
+     foreach (var name in names)
+     {
+     Console.WriteLine(name);
+     }string[] names = { "Alex", "Eddie", "David", "Michael" };
+
+     for (int i = 0; i < names.Length; i++)
+     {
+     if (names[i] == "David")
+     {
+          names[i] = "Sammy";
+     }
+     }
+
+     foreach (var name in names)
+     {
+     Console.WriteLine(name);
+     }
+     ```
+
+3. Save your code file, and then use Visual Studio Code to run your code.
+
+     Enter `dotnet run` from the Terminal command prompt to run your code.
+
+4. Notice that the code runs without error and generates the desired output.
+
+     When you run the code, you'll see the following output.
+
+     ```
+     Alex
+     Eddie
+     Sammy
+     Michael
+     ```
+
+     Since the array isn't directly part of the iteration statement's implementation, you can change values inside of the array.
+
+### Recap
+
+Here are a few of the takeaways from this unit:
+
+- The `for` iteration statement allows you to iterate through a block of code a specific number of times.
+
+- The `for` iteration statement allows you to control every aspect of the iteration's mechanics by altering the three conditions inside the parentheses: the initializer, condition, and iterator.
+
+- It's common to use the `for` statement when you need to control how you want to iterate through each item in an array.
+
+- If your code block has only one line of code, you can eliminate the curly braces and white space if you wish.
+
+### Knowledge Check
+
+![alt text](image.png)
+
