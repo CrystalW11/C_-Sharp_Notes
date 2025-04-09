@@ -126,4 +126,215 @@ This module includes hands-on activities that guide you through the process of b
      
      f. Finally, the code block. The code block contains the code that will be executed for each iteration. Notice that the value of `i` is referenced inside of the code block. The docs refer to this section as the **body**.
 
-Given our rules for naming variables, you may wonder if `i` is a valid name for the variable that holds the current iteration. In this case, `i` is considered by most to be valid. Other popular choices are x and counter. The name j is also used in those situations when you have an outer `for` statement that uses `i`, and need to create an iteration variable for an inner for statement.
+     Given our rules for naming variables, you may wonder if `i` is a valid name for the variable that holds the current iteration. In this case, `i` is considered by most to be valid. Other popular choices are `x` and `counter`. The name `j` is also used in those situations when you have an outer `for` statement that uses `i`, and need to create an iteration variable for an inner `for` statement.
+
+     ❗**Note**
+
+     All three sections (initializer, condition, and iterator) are optional. However, in practice, typically all three sections are used.
+
+### Change the iteration conditions
+
+As we stated at the outset, the `for` statement has two unique qualities among iteration statements.
+
+- The `for` statement should be used when you know the number of times you need to iterate through a block of code ahead of time.
+
+- The `for` statement allows you to control the way in which each iteration is handled.
+
+What if we needed to iterate through a block of code, but want to count down instead of counting up?
+
+1. Use the Visual Studio Code Editor to update your code as follows:
+
+     ```
+     for (int i = 10; i >= 0; i--)
+     {
+     Console.WriteLine(i);
+     }
+     ```
+
+2. Take a minute to review your updated code.
+
+     By changing the three parts of the `for` statement, we change its behavior.
+
+     - We initialize the iteration variable to 10.
+
+     - We change the completion condition to exit the `for` statement when `i` is less than `0`.
+
+     - We change the pattern of the iterator to subtract `1` from `i` each time we complete an iteration.
+
+3. Save your code file, and then use Visual Studio Code to run your code.
+
+     Enter `dotnet run` from the Terminal command prompt to run your code.
+
+4. Notice that the output has changed.
+
+     When you run the code, you'll see the following output.
+
+     ```
+     10
+     9
+     8
+     7
+     6
+     5
+     4
+     3
+     2
+     1
+     0
+     ```
+
+### Experiment with the iterator's pattern
+
+What if we wanted to skip past certain values in the iterator variable?
+
+1. Use the Visual Studio Code Editor to update your code as follows:
+
+     ```
+     for (int i = 0; i < 10; i += 3)
+     {
+     Console.WriteLine(i);
+     }
+     ```
+
+2. Take a minute to review your updated code.
+
+     Instead of incrementing or decrementing the value of the iterator variable by `1`, we use `i += 3` to skip two values after each iteration.
+
+3. Save your code file, and then use Visual Studio Code to run your code.
+
+     Enter `dotnet run` from the Terminal command prompt to run your code.
+
+4. Notice how the output has changed.
+
+     When you run the code, you'll see the following output.
+
+     ```
+     0
+     3
+     6
+     9
+     ```
+
+     Admittedly, you won't do this sort of thing often, but hopefully you can appreciate that you have a fine grained level of control over the iterations should you ever need it.
+
+### Use the break keyword to break the iteration statement
+
+What if we need to exit the iteration statement prematurely based on some condition? We can use the break keyword.
+
+1. Use the Visual Studio Code Editor to update your code as follows:
+
+     ```
+     for (int i = 0; i < 10; i++)
+     {
+     Console.WriteLine(i);
+     if (i == 7) break;
+     }
+     ```
+
+2. Take a minute to review the use of the break` keyword in your updated code.
+
+     We first saw the `break` keyword in the module "Branch the flow of code using the switch-case construct in C#". As it turns out, we can use the `break` keyword to exit out of iteration statements as well.
+
+3. Save your code file, and then use Visual Studio Code to run your code.
+
+     Enter `dotnet run` from the Terminal command prompt to run your code.
+
+4. Notice how the output has changed.
+
+     When you run the code, you'll see the following output.
+
+     ```
+     0
+     1
+     2
+     3
+     4
+     5
+     6
+     7
+     ```
+
+### Loop through each element of an array
+
+A common usage for the `for` statement is to iterate through an array of elements, especially if you need some control over the manner in which the iteration happens. While the `foreach` iterates through every element of the array, the `for` statement can be tweaked to provide more customization.
+
+1. Use the Visual Studio Code Editor to update your code as follows:
+
+     ```
+     string[] names = { "Alex", "Eddie", "David", "Michael" };
+     for (int i = names.Length - 1; i >= 0; i--)
+     {
+     Console.WriteLine(names[i]);
+     }
+     ```
+
+2. Take a minute to review your updated code.
+
+     First off, notice that we have instantiated a string array `named` names that contains four names.
+
+     Next, notice that we are using the `Array.Length` property to get the number of elements in the array, and that we are using this value to initialize our iterator variable `(int i = names.Length - 1)`. We subtract 1 from the value because the index number for array elements is zero-based (the index numbers of the four elements are 0-3).
+
+     Finally, notice we have chosen iterate through the array backwards--something that we are unable to do with the `foreach` statement. We use the value of the iteration variable inside the code block to specify the index number of the array elements (`names[i]`).
+
+3. Save your code file, and then use Visual Studio Code to run your code.
+
+     Enter `dotnet run` from the Terminal command prompt to run your code.
+
+4. Notice that the array elements are listed in reverse order (as we intended).
+
+     When you run the code, you'll see the following output.
+
+     ```
+     Michael
+     David
+     Eddie
+     Alex
+     ```
+
+❗**Note**
+
+We could have iterated forward through the array elements by constructing the `for` statement as follows: `for (int i = 0; i < names.Length; i++)`.
+
+### Examine the limitation of the foreach statement
+
+What if you want to update a value in the array during a `foreach` iteration?
+
+1. Use the Visual Studio Code Editor to update your code as follows:
+
+     ```
+     string[] names = { "Alex", "Eddie", "David", "Michael" };
+     foreach (var name in names)
+     {
+     // Can't do this:
+     if (name == "David") name = "Sammy";
+     }
+     ```
+
+2. Save your code file, and then use Visual Studio Code to run your code.
+
+     Enter `dotnet run` from the Terminal command prompt to run your code.
+
+3. Notice the error message that is displayed.
+
+     If you attempt to compile and run this code, you will see an exception.
+
+     ```
+     Cannot assign to name because it is a 'foreach iteration variable'
+     ```
+
+In other words, you can't reassign the value of name because it is part of the foreach iteration's inner implementation.
+
+### Overcoming the limitation of the foreach statement using the for statement
+
+Let's try using a `for` statement to modify the contents of an array inside the iteration code block.
+
+1. Use the Visual Studio Code Editor to update your code as follows:
+
+     ```
+     string[] names = { "Alex", "Eddie", "David", "Michael" };
+     for (int i = 0; i < names.Length; i++)
+     if (names[i] == "David") names[i] = "Sammy";
+
+     foreach (var name in names) Console.WriteLine(name);
+     ```
+
