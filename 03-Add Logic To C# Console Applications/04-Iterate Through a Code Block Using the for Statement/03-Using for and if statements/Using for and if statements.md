@@ -73,7 +73,6 @@ You will need to understand how to use the `%` remainder operator to determine i
 
     ❗**Note**
 
-    We only show the first 22 values, but your output should continue to 100. As you can see, the number 15 is divisible by both 3 and 5, so we print FizzBuzz next to that number.
+    We only show the first 22 values, but your output should continue to 100. As you can see, the number `15` is divisible by both 3 and 5, so we print `FizzBuzz` next to that number.
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.
-
