@@ -49,7 +49,7 @@ Here are the rules for the battle game that you need to implement in your code p
 
 3. Run your application and verify that your output meets the requirements.
 
-    No matter how you do it, your code should produce a similar output:
+    No matter how you do it, your code should produce a similar **output**:
 
     ```
     Monster was damaged and lost 1 health and now has 9 health.
