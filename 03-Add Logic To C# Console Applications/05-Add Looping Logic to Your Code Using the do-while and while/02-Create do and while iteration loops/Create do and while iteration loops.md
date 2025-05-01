@@ -263,3 +263,5 @@ There's a few important ideas you should take away from this unit:
 
 ### Knowledge check
 
+![alt text](image.png)
+
