@@ -4,7 +4,7 @@
 
 Code challenges will reinforce what you've learned and help you gain some confidence before continuing on.
 
-### FizzBuzz challenge
+### Fizz Buzz challenge
 
 **FizzBuzz** is a popular coding challenge and interview question. It exercises your understanding of the `for` statement, the `if` statement, the `%` remainder operator, and your command of basic logic.
 
@@ -39,7 +39,7 @@ Here are the FizzBuzz rules that you need to implement in your code project:
 
 You will need to understand how to use the `%` remainder operator to determine if a number is divisible by another number evenly. We covered this in the module "Perform basic operations on numbers in C#".
 
-3. Run your application and verify that your output meets the requirements.
+3.  Run your application and verify that your output meets the requirements.
 
     No matter how you have nested you iteration and conditional statements, your code should produce the following output.
 
