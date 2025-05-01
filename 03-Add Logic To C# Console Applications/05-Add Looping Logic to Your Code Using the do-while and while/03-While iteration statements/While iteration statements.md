@@ -47,7 +47,7 @@ Here are the rules for the battle game that you need to implement in your code p
 
 2. Write your game code that implements each rule.
 
-3. Run your application and verify that your output meets the requirements.
+3. Run your application and verify that your output meets the requirements.ush 0-
 
     No matter how you do it, your code should produce a similar **output**:
 
