@@ -23,3 +23,16 @@ After you complete this module, you'll be able to:
 - Experience using if-elseif-else and switch-case statements in `C# `to match a variable or expression against several possible outcomes
 
 - Experience using foreach and for statements in C# to loop through a block of code and access elements of array variables
+
+### This module is part of these learning paths
+
+Add logic to C# console applications (Get started with C#, Part 3)
+
+- Introduction - 3 min
+- Exercise - Create do and while iteration loops - 10 min
+- Exercise - Complete a challenge activity using do and while iteration statements - 9 min
+- Review the solution to do and while challenge activity - 6 min
+- Exercise - Complete a challenge activity to differentiate between do and while iteration statements - 14 min
+- Review the solution to do versus while challenge activity- 8 min
+- Module assessment - 3 min
+- Summary - 2 min
