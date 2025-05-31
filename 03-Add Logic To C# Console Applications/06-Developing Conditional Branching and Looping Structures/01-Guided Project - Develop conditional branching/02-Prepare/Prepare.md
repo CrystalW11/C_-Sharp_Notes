@@ -15,10 +15,15 @@ You're working on the Contoso Pets application, an application that helps place 
 - The ourAnimals array includes the following "pet characteristics" for each animal:
 
     - Pet ID #.
+    
     - Pet species (cat or dog).
+    
     - Pet age (years).
+    
     - A description of the pet's physical condition/characteristics.
+    
     - A description of the pet's personality.
+    
     - The pet's nickname.
 
 - Implement a sample dataset that represents dogs and cats currently in your care.
