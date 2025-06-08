@@ -299,3 +299,50 @@ This final update makes it easier to see the separation between pets when your o
 
 ### Check your work
 
+In this task, you run your application from the Integrated Terminal and verify that your nested combination of for and if statements produces the expected result.
+
+1. If necessary, open Visual Studio Code's Integrated Terminal panel.
+
+2. At the Terminal command prompt, enter dotnet run
+
+3. At the Terminal command prompt, enter 1
+
+4. Verify that the pet data is displayed for the four pets that have been assigned data.
+
+```
+ID #: d1
+Species: dog
+Age: 2
+Nickname: lola
+Physical description: medium sized cream colored female golden retriever weighing about 65 pounds. housebroken.
+Personality: loves to have her belly rubbed and likes to chase her tail. gives lots of kisses.
+
+ID #: d2
+Species: dog
+Age: 9
+Nickname: loki
+Physical description: large reddish-brown male golden retriever weighing about 85 pounds. housebroken.
+Personality: loves to have his ears rubbed when he greets you at the door, or at any time! loves to lean-in and give doggy hugs.
+
+ID #: c3
+Species: cat
+Age: 1
+Nickname: Puss
+Physical description: small white female weighing about 8 pounds. litter box trained.
+Personality: friendly
+
+ID #: c4
+Species: cat
+Age: ?
+Nickname:
+Physical description:
+Personality:
+Press the Enter key to continue.
+```
+
+### ❗Note
+
+If you don't see the expected results displayed, ensure that you saved your updated Program.cs file. If you're not seeing the expected results and you can't identify the issue, you can examine the Program.cs code in the Final folder. The Final folder is included as part of the download you completed during Setup. We recommend that you spend time trying to identify and fix syntax and logic issue in your code before checking the Program.cs file in the Final folder.
+
+5. Exit the application, and then close the Terminal panel.
+
