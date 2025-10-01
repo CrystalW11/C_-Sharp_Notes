@@ -9,3 +9,5 @@ By creating nested combinations of iteration and selection statements, you built
 
 Having the ability to implement a variety of iteration and selection statements enables you to optimize your code.
 
+![alt text](image.png)
+
