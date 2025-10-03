@@ -387,3 +387,8 @@ You covered several important concepts of data conversion and casting:
 
 - Use the `Convert` class when you want to perform a narrowing conversion, but want to perform rounding, not a truncation of information
 
+
+### Check Your Knowledge
+
+
+![alt text](image.png)
