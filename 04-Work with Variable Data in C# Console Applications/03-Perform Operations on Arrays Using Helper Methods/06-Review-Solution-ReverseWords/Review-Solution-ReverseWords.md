@@ -15,27 +15,27 @@ The following solution provided is one of many possible solutions. The approach 
 
 The final result of this example solution.
 
-    ```
-    string pangram = "The quick brown fox jumps over the lazy dog";
+```
+string pangram = "The quick brown fox jumps over the lazy dog";
 
-    // Step 1
-    string[] message = pangram.Split(' ');
+// Step 1
+string[] message = pangram.Split(' ');
 
-    //Step 2
-    string[] newMessage = new string[message.Length];
+//Step 2
+string[] newMessage = new string[message.Length];
 
-    // Step 3
-    for (int i = 0; i < message.Length; i++)
-    {
-        char[] letters = message[i].ToCharArray();
-        Array.Reverse(letters);
-        newMessage[i] = new string(letters);
-    }
+// Step 3
+for (int i = 0; i < message.Length; i++)
+{
+    char[] letters = message[i].ToCharArray();
+    Array.Reverse(letters);
+    newMessage[i] = new string(letters);
+}
 
-    //Step 4
-    string result = String.Join(" ", newMessage);
-    Console.WriteLine(result);
-    ```
+//Step 4
+string result = String.Join(" ", newMessage);
+Console.WriteLine(result);
+```
 
 This code is merely "***one possible solution***" because you can take different approaches to various steps in this process. As long as your output matches the following, you succeeded.
 
