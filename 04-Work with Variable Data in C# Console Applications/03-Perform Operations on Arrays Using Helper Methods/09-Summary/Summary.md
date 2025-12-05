@@ -15,3 +15,4 @@ In this module, you completed exercises using helper methods to use arrays more 
 
 The array helper methods allowed you to work flexibly with data in the applications. Without these features, arrays would be less useful.
 
+
