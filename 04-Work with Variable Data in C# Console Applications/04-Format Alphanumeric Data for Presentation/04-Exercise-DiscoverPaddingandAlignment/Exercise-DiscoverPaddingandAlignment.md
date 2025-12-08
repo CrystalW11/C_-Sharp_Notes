@@ -229,5 +229,3 @@ There's a few important takeaways from this unit.
 ### Check your knowledge
 
 ![alt text](image.png)
-
-
