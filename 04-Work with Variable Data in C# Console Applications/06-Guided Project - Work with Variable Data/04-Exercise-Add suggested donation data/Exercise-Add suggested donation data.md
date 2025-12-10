@@ -8,3 +8,326 @@ In this step of the development process, you update the code provided in the sta
 
 You need to create a new variable to hold suggested donations and expand the `ourAnimals` array to hold the new data.
 
+1. Notice the code under comment #1 that declares variables used for populating the `ourAnimals` array for each animal.
+
+    You need to declare another `string` for the suggested donation data.
+
+    ```
+    // #1 the ourAnimals array will store the following: 
+    string animalSpecies = "";
+    string animalID = "";
+    string animalAge = "";
+    string animalPhysicalDescription = "";
+    string animalPersonalityDescription = "";
+    string animalNickname = "";
+    ```
+
+2. Create the `suggestedDonation` variable below the declaration for `animalNickname`.
+
+    The declaration for the `suggestedDonation` is added with the following code:
+
+    ```
+    string suggestedDonation = "";
+    ```
+
+3. Locate the code to create the `ourAnimals` array following comment # 3.
+
+    The following line of code creates the array:
+
+    `string[,] ourAnimals = new string[maxPets, 6];`
+
+    The sizes defining the two dimensions of the array are the maximum number of pets `maxPets` and the number `6` for the six strings originally defined, but without room for the new `suggestedDonation` data.
+
+4. Update `ourAnimals` array to hold `7` "columns" of data for each animal instead of `6`.
+
+    The following line shows the updated code:
+
+    `string[,] ourAnimals = new string[maxPets, 7];`
+
+    You expanded the `ourAnimals` array to support the added `suggestedDonation` data.
+
+## Add `suggestedDonation` amounts to the sample data
+
+1. Take a minute to review `case 0:` inside the switch statement following comment #4.
+
+    The following code that defines sample data for the first pet before the `suggestedDonation` data is created. It would fit nicely below the `animalNickname`!
+
+    ```
+    case 0:
+            animalSpecies = "dog";
+            animalID = "d1";
+            animalAge = "2";
+            animalPhysicalDescription = "medium sized cream colored female golden retriever weighing about 45 pounds. housebroken.";
+            animalPersonalityDescription = "loves to have her belly rubbed and likes to chase her tail. gives lots of kisses.";
+            animalNickname = "lola";
+            break;
+    ```
+
+2. Insert a `suggestedDonation` value above the `break` statement for `case 0;` through default: with the following values:
+
+
+- `Case 0: suggestedDonation = "85.00";`
+
+- `Case 1: suggestedDonation = "49.99";`
+
+- `Case 2: suggestedDonation = "40.00";`
+
+- `Case 3: suggestedDonation = "";`
+
+- `default: suggestedDonation = "";`
+
+The following code shows `case 0:` code with the addition of '`suggestedDonation`':
+
+    ```
+    case 0:
+    animalSpecies = "dog";
+    animalID = "d1";
+    animalAge = "2";
+    animalPhysicalDescription = "medium sized cream colored female golden retriever weighing about 45 pounds. housebroken.";
+    animalPersonalityDescription = "loves to have her belly rubbed and likes to chase her tail. gives lots of kisses.";
+    animalNickname = "lola";
+    suggestedDonation = "85.00";
+    break;
+    ```
+
+3. In your project.cs file, locate the following array populated with the pet data from case statements (it's just before comment # 5):
+
+    ```
+    ourAnimals[i, 0] = "ID #: " + animalID;
+        ourAnimals[i, 1] = "Species: " + animalSpecies;
+        ourAnimals[i, 2] = "Age: " + animalAge;
+        ourAnimals[i, 3] = "Nickname: " + animalNickname;
+        ourAnimals[i, 4] = "Physical description: " + animalPhysicalDescription;
+        ourAnimals[i, 5] = "Personality: " + animalPersonalityDescription;
+    ```
+
+4. Notice that `suggestedDonation` data isn't included as part of the sample data starter code for populating the array.
+
+    It makes sense to populate the array with a statement like:
+
+    ```
+    ourAnimals[i, 6] = "Suggested Donation: "  + suggestedDonation;
+    ```
+
+    But, you don't add that code. In the next section, you'll use another approach.
+
+## Data validation with `TryParse()`
+
+The variable `suggestedDonation` is intended to be a numeric value, but is collected and stored as a `string`. Consider future cases where you have to validate that `suggestedDonation` represents a decimal, and that you can convert it to a decimal so it's available to use for billing calculations. To avoid errors when users enter numbers in text format, like `twenty`, you need to use `TryParse` validation.
+
+
+##  ❗Note
+
+The code samples in this exercise are designed based on en-US culture settings, and use a period (`.`) as the decimal separator. Building and running the code with a culture setting that uses a different decimal separator (such as a comma `,`) frequently gives unexpected results or errors. To fix this issue, replace the period decimal separators in the code samples with your local decimal separator (such as `,`). Alternatively, to run a program using the en-US culture setting, add: ` using System.Globalization;` to the top of your program. And after any other `using` statements, add `CultureInfo.CurrentCulture = new CultureInfo("en-US");`.
+
+#
+
+1. Before comment #5, inside the end of the code block, add the code to validate that `suggestedDonation` can be cast as a decimal.
+
+    You add the code that follows:
+
+    ```
+    if (!decimal.TryParse(suggestedDonation, out decimalDonation)){
+    decimalDonation = 45.00m; // if suggestedDonation NOT a number, default to 45.00
+    }
+    ```
+
+    If the `suggestedDonation` variable can't be cast as a `decimal`, then the code assigns a default value `decimalDonation = 45.00m;`. If the cast is successful, the `TryParse` populates `decimalDonation`. Either way, decimalDonation represents a proper decimal.
+
+2. Ensure that your validation code is in the right place!
+
+    The two lines you added should appear in the code as the top two lines of the following code:
+
+    ```
+        if (!decimal.TryParse(suggestedDonation, out decimalDonation)){
+            decimalDonation = 45.00m; // if suggestedDonation NOT a number, default to 45.00
+        }
+    }
+
+    // #5 display the top-level menu options
+    ```
+
+    Note, validation still doesn't work. You can't forget, the need to declare `decimalDonation` to use it in the code.
+
+3. Following the comment #2, declare `decimalDonation`, after `string menuSelection = "";`:
+
+    ```
+    decimal decimalDonation = 0.00m;
+    ```
+
+    Finally you're ready to populate `suggestedDonation` data for each pet.
+
+4. Just before comment #5, immediately after the `TryParse` closing bracket `}` you completed, add the following code:
+
+    ```
+    ourAnimals[i, 6] = $"Suggested Donation: {decimalDonation:C2}";
+    ```
+
+    You used the `decimalDonation` version of the suggested donation data. You also used string interpolation and currency formatting in the output.
+
+5. Take a minute to review how the suggested donation data finally makes it into the `ourAnimals` array.
+
+    The following code populates the `ourAnimals` array in context of the `TryParse()`:
+
+    ```
+        if (!decimal.TryParse(suggestedDonation, out decimalDonation)){
+        decimalDonation = 45.00m; // if suggestedDonation NOT a number, default to 45.00
+        }
+    ourAnimals[i, 6] = $"Suggested Donation: {decimalDonation:C2}";
+    }
+
+    // #5 display the top-level menu options
+    ```
+
+    Notice that by using the code `{decimalDonation:C2}` the suggested donation, from `decimalDonation`, displays with the local currency symbol and two decimal places as directed by the currency formatting `:C2`.
+
+## Review and update where ourAnimals array should be used
+
+The addition of the `suggestedDonation` data created need for further updates. The menu option `"1. List all of our current pet information"` is missing the added data.
+
+1. Notice the code under comment #5, for the menu loop within `case 1`.
+
+    The inner loop "`for (int j = 0; j < 6; j++)`" that prints the pet attributes needs to account for `suggestedDonation` data added.
+
+2. Update the inner loop code exit condition. Increased the exit condition by "1," so it becomes `j <7`. Check that your code matches the code that follows:
+
+    ```
+    case "1":
+    // list all pet info
+    for (int i = 0; i < maxPets; i++)
+    {
+        if (ourAnimals[i, 0] != "ID #: ")
+        {
+            Console.WriteLine();
+            for (int j = 0; j < 7; j++) // increased exit condition
+            {
+                Console.WriteLine(ourAnimals[i, j]);
+            }
+        }
+    }
+    ```
+
+## Testing Overview
+
+With several code additions in place, you need to confirm your code works as expected. The two significant test areas are:
+
+1. The code complies without errors.
+
+2. Selecting menu option 1 all pet information displays:
+
+
+- Output includes all of sample pet information, including: ID, species, age, nickname, physical description, and personality description.
+
+- For each pet, the suggested donation displays with a currency symbol and with two decimal places of precision.
+
+## Check your work
+
+**Build and run to test the code**. Use these steps each time you need to test your code.
+
+1. On the Visual Studio Code **File** menu, select **Save**.
+
+2. In the EXPLORER view, right-click **Starter**, and then select **Open in Integrated Terminal**.
+
+    A TERMINAL panel should open below the code Editor area.
+
+    There are several ways to open Visual Studio Code's integrated terminal. For example, the top menu provides access to the TERMINAL panel from both the View menu and the Terminal menu. Also, keyboard shortcuts that open the TERMINAL panel are a valuable option for increasing your coding efficiency. Each method is acceptable.
+
+3. Notice that the TERMINAL panel includes a command line prompt, and that the prompt shows the current folder path. For example:
+
+    `C:\Users\someuser\Desktop\GuidedProject\Starter>`
+
+    You can use the TERMINAL panel to run Command Line Interface (CLI) commands, such as `dotnet build` and `dotnet run`. The `dotnet build` command compiles your code and display error and warning messages related to your code syntax.
+
+## ❗ Important
+
+You need to ensure that terminal command prompt is open to the root of your project workspace. In this case, the root of the project workspace is the Starter folder, where the Starter.csproj and **Program.cs** files are located. When you run commands in the terminal, the commands try to perform actions using current folder location. If you try to run the `dotnet build` or `dotnet run` commands from a folder location that doesn't contain the files, the commands generate error messages.
+
+#
+
+
+4. At the TERMINAL command prompt, to build your project code, enter the following command: `dotnet build`
+
+    After a couple seconds, you should see a message telling you that your build succeeded, and that you have `0 Warnings and 0 Errors`.
+
+    ```
+    Determining projects to restore...
+    All projects are up-to-date for restore.
+    Starter -> C:\Users\someuser\Desktop\GuidedProject\Starter\bin\Debug\net6.0\Starter.dll
+
+    Build succeeded.
+        0 Warning(s)
+        0 Error(s)
+    ```
+
+##  ❗Note
+
+Use the earlier `dotnet build` and `dotnet run` steps each time you need to test your code in the exercises that follow in this module.
+
+# 
+
+5. If you see Error or Warning messages, you need to fix them before continuing.
+
+    Error and Warning messages list the code line where the issue is found. The following message is an example of a `Build FAILED` error message:
+
+    `C:\Users\someuser\Desktop\GuidedProject\Starter\Program.cs(53,18): error CS1002: ; expected`
+
+    `[C:\Users\someuser\Desktop\GuidedProject\Starter\Starter.csproj]`
+
+    This message tells you the type of error that was detected and where to find it. In this case, the message tells you that the Program.cs file contains an error - `error CS1002: ; expected`. The `; expected` suggests that you forgot to include a `;` at the end of a statement. The `Program.cs(53,18)` portion of the message tells you the error location, on code line 53, at a position 18 characters in from the left.
+
+    A syntax error like this prevents the Build from succeeding (Build FAILED). Some Build messages provide a "Warning" instead of an "Error," which means there's something to be concerned with, but you can try running the program anyway (Build succeeded).
+
+    Once you fix the issues and saved your updates, you can run the `dotnet build` command again. Continue until you have `0 Warning(s) and 0 Error(s)`.
+
+    If you encounter difficulty resolving an issue on your own, examine the Program.cs code in the Final folder included in the download completed during Setup. The Program.cs code in the Final folder represents the conclusion of all exercises in this module, so it includes code that you didn't create yet.
+
+    The solution code often looks different than the Program.cs code that you developed to this point in the Guided project. However, you can examine the Program.cs code in Final to help you isolate and fix an issue in your code.
+
+    Avoid relying on the solution code while developing your own solution. Remember that you learn from mistakes and that every developer spends time finding and fixing errors.
+
+6. Test the updated console app, at the TERMINAL command prompt build & run your project code with one command by entering: `dotnet run`. When the code runs two menu items display.
+
+    - Enter "`1`" to test the "display all pets" output
+
+    - Enter "`2`" to test the placeholder message "under construction" message
+
+    The output for menu item #1 should closely match the following sample:
+
+
+    ```
+    ID #: d1
+    Species: dog
+    Age: 2
+    Nickname: lola
+    Physical description: medium sized cream colored female golden retriever weighing about 45 pounds. housebroken.
+    Personality: loves to have her belly rubbed and likes to chase her tail. gives lots of kisses.
+    Suggested Donation: $85.00
+
+    ID #: d2
+    Species: dog
+    Age: 9
+    Nickname: gus
+    Physical description: large reddish-brown male golden retriever weighing about 85 pounds. housebroken.
+    Personality: loves to have his ears rubbed when he greets you at the door, or at any time! loves to lean-in and give doggy hugs.
+    Suggested Donation: $49.99
+
+    ID #: c3
+    Species: cat
+    Age: 1
+    Nickname: snow
+    Physical description: small white female weighing about 8 pounds. litter box trained.
+    Personality: friendly
+    Suggested Donation: $40.00
+
+    ID #: c4
+    Species: cat
+    Age:
+    Nickname: lion
+    Physical description:
+    Personality:
+    Suggested Donation: $45.00
+    ```
+
+    If everything worked as expected, congratulations! Otherwise, look for the error by checking code instruction steps involved. If needed, start over with a new starter Project.cs file and if you still have issues check the solution folder code for this exercise.
+
+7. Type `exit`, at the app menu, to end the program and then close the terminal panel.
