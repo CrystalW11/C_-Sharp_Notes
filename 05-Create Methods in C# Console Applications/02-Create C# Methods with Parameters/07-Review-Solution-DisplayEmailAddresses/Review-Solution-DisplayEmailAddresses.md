@@ -4,7 +4,7 @@
 
 The following code is one possible solution for the challenge from the previous unit.
 
-    ```
+```
     string[,] corporate = 
         {
             {"Robert", "Bavin"}, {"Simon", "Bright"},
@@ -35,29 +35,30 @@ The following code is one possible solution for the challenge from the previous 
             email = email.ToLower();
             Console.WriteLine($"{email}@{domain}");
         }
-    ```
+```
 
-    This code is just "***one possible solution***" because you might have added line feeds in different spots, used variables differently, or formatted the code differently.
+This code is just "***one possible solution***" because you might have added line feeds in different spots, used variables differently, or formatted the code differently.
 
-    Regardless of minor code differences, your method should apply the default value of an optional parameter to display `contoso.com`.
+Regardless of minor code differences, your method should apply the default value of an optional parameter to display `contoso.com`.
 
-    When you run the code, you should see the following output:
+When you run the code, you should see the following output:
 
 
-    ```
+```
     robavin@contoso.com
-        sibright@contoso.com
-        kisinclair@contoso.com
-        aakamath@contoso.com
-        sadelucchi@contoso.com
-        siali@contoso.com
-        viashton@hayworth.com
-        codysart@hayworth.com
-        shlawrence@hayworth.com
-        davaldes@hayworth.com
-    ```
+    sibright@contoso.com
+    kisinclair@contoso.com
+    aakamath@contoso.com
+    sadelucchi@contoso.com
+    siali@contoso.com
+    viashton@hayworth.com
+    codysart@hayworth.com
+    shlawrence@hayworth.com
+    davaldes@hayworth.com
+```
 
-    If you completed this challenge, congratulations! Continue on to the knowledge check in the next unit.
+
+If you completed this challenge, congratulations! Continue on to the knowledge check in the next unit.
 
 #
 
