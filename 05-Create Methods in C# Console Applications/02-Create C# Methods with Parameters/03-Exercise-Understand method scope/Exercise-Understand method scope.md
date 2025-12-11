@@ -132,7 +132,6 @@ Statements declared outside of any code block are called top-level statements. V
 
 Here's what you've learned about method scope so far:
 
-
 - Variables declared inside of a method are only accessible to that method.
 
 - Variables declared in top-level statements are accessible throughout the program.
