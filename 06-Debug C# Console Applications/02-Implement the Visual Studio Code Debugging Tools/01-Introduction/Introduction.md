@@ -23,7 +23,7 @@ In this module, you will:
 
 - Use the call stack to find the source of an exception.
 
-Ultimately, you'll be able to isolate code bugs efficiently using the debugger tools, and you won't need to rely on Console.WriteLine anymore.
+Ultimately, you'll be able to isolate code bugs efficiently using the debugger tools, and you won't need to rely on `Console.WriteLine` anymore.
 
 
 ### Prerequisites
