@@ -69,13 +69,14 @@ If a folder named **ChallengeProject** already exists, you can select **Replace 
 
     a. Open Visual Studio Code in your development environment.
 
-    b. In Visual Studio Code, on the File menu, select Open Folder.
+    b. In Visual Studio Code, on the **File** menu, select **Open Folder**.
 
     c. Navigate to the Windows Desktop folder and locate the "ChallengeProject" folder.
 
-    d. Select ChallengeProject and then select Select Folder.
+    d. Select **ChallengeProject** and then select **Select Folder**.
 
-    The Visual Studio Code EXPLORER view should show the **ChallengeProject** folder and two subfolders named **Final** and **Starter**.
+    
+The Visual Studio Code EXPLORER view should show the **ChallengeProject** folder and two subfolders named **Final** and **Starter**.
 
 You're now ready to begin the Challenge project exercises. Good luck!
 
