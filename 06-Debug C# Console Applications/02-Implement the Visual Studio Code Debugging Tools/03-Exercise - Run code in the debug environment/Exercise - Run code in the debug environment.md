@@ -193,8 +193,6 @@ During the remainder of this module, you'll use the Visual Studio Code debugger 
 
 Here are a few important things to remember from this unit:
 
-
-
 - The Visual Studio Code debugger for C# uses the .NET runtime to launch and interact with an application.
 
 - The Visual Studio Code **Run** menu has options to start an application with and without the debugger attached.
