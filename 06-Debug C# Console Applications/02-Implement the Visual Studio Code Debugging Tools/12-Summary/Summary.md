@@ -8,3 +8,5 @@ By configuring the Visual Studio Code debugger environment for different sample 
 
 Without the ability to configure and use the Visual Studio Code debugger tools, you wouldn't be able to isolate and fix code bugs in a timely manner.
 
+![alt text](image.png)
+
