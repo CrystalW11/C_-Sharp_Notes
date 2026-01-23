@@ -126,3 +126,10 @@ Here are a few important things to remember from this unit:
 - The exception type is dependent on the code that causes the exception.
 
 - Your application should catch runtime exceptions.
+
+### Check Your Knowledge
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
