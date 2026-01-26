@@ -8,3 +8,5 @@ By reviewing the cash register application, debugging the `MakeChange` method, a
 
 The ability to debug C# applications and implement exception handling enables you to develop stable and reliable applications.
 
+![alt text](image.png)
+
