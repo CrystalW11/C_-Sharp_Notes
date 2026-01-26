@@ -8,3 +8,4 @@ By configuring the debug environment and successfully debugging the cash registe
 
 Your ability to debug the cash register application demonstrates your ability to implement the Visual Studio Code debugger tools for C#.
 
+![alt text](image.png)
